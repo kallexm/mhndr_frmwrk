@@ -1,0 +1,6 @@
+[submodule "framework/CMock"]
+	path = framework/CMock
+	url = git@github.com:ThrowTheSwitch/CMock.git
+[submodule "framework/Unity"]
+	path = framework/Unity
+	url = git@github.com:ThrowTheSwitch/Unity.git
