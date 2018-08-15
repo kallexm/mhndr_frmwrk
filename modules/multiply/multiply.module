@@ -1,0 +1,5 @@
+<?xml version="1.0" ?>
+<Entity name="multiply">
+	<Source>multiply.c</Source>
+	<Include>multiply.h</Include>
+</Entity>

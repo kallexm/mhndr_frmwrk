@@ -1,0 +1,6 @@
+<?xml version="1.0" ?>
+<Entity name="addition">
+	<Source>addition.c</Source>
+	<Include>addition.h</Include>
+    <Dependency>multiply</Dependency>
+</Entity>
