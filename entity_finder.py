@@ -69,7 +69,7 @@ class EntityFinder(object):
 
     def _find_entities(self):
         re_test_file        = re.compile(".*\.test")
-        re_app_file         = re.compile(".*\.executable")
+        re_app_file         = re.compile(".*\.app")
         re_module_file      = re.compile(".*\.module")
         re_c_file           = re.compile(".*\.c")
         re_h_file           = re.compile(".*\.h")
