@@ -8,6 +8,7 @@ import time
 
 import entity_finder
 import builder
+from unity_tester import UnityTester
 
 
 def cmd_build(entities, pymk_root, args):
@@ -17,8 +18,11 @@ def cmd_build(entities, pymk_root, args):
     print("======[Finished building applications]======")
 
 def cmd_test(entity_map, pymk_root, args):
-    print("test")
-
+    print("======[Start testing of code]===============")
+    tester = UnityTester(entity_map, pymk_root, args)
+    tester.prepare()
+    tester.run()
+    print("======[Finished testing of code]============")
 
 def cmd_clean(entity_map, pymk_root, args):
     print("clean")
@@ -57,7 +61,7 @@ def main():
     pymk_root = pymk_root.replace("/cygdrive", "")
     print(pymk_root)
 
-    entities = entity_finder.EntityFinder(pymk_root)
+    entities = entity_finder.EntityFinder(pymk_root, exclude_dir_names=["mocks"])
     entities.run()
 
     arguments.func(entities, pymk_root, arguments)

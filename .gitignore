@@ -2,5 +2,6 @@ _build/
 *.o
 **/test/*_Runner.c
 **/test/Test*.exe
+**/mocks
 __pycache__
 *.pyc
