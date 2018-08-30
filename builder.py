@@ -32,6 +32,7 @@ class AppBuilder(object):
 
         print("Finished building application "+self.app.name+"!")
 
+
     def _get_entities(self, entity):
         for dep in entity.dependencies:
             self.entities.append(dep)
@@ -114,4 +115,3 @@ class AppBuilder(object):
         cmd.extend(self.temp_objects)
 
         subprocess.call(cmd)
-
